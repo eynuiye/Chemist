@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nxz7eGMEqzt0Yc5aEotcYdMOvBtSGgnv6ruriFwKlkliyFl/91tGCiG7z5valvkMS5iyYrFmmRgnmZRxjOf3rw==",
+  "dgSpecHash": "+wg+PnxVwyD51gbdP1FTLH5hDd2t3E4LqzXrZjcoDE+4jBx7y7e2WJRuIlaTrdlHwrVDnJ5Wh0j6lYpL1kdD4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\student\\Source\\Repos\\Chemist\\prakt\\prakt.csproj",
+  "projectFilePath": "C:\\Users\\student\\source\\repos\\Chemist\\prakt\\prakt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\student\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
