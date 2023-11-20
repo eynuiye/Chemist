@@ -1,9 +1,14 @@
-﻿namespace prakttwo.ViewModels
+﻿using prakttwo.Views;
+
+namespace prakttwo.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-#pragma warning disable CA1822 // Mark members as static
-        public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+        public MainWindowViewModel()
+        {
+            _ClientsUserControl = new ClientUserControl();
+            _ClientsUserControl.DataContext = new ClientUserControlViewModel();
+        }
+        public ClientUserControl _ClientsUserControl { get; set; }
     }
 }
