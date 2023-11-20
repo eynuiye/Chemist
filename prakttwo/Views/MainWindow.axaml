@@ -19,7 +19,7 @@
 
 		</TabItem>
 		<TabItem Header="Лекарства">
-
+			<UserControl Content="{Binding _MedicinesUserControl}"/>
 		</TabItem>
 	</TabControl>
 
