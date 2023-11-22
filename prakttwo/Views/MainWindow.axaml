@@ -16,7 +16,7 @@
 	</Design.DataContext>
 	<TabControl>
 		<TabItem Header="Клиенты">
-
+				<UserControl Content="{Binding _ClientsUserControl}"/>
 		</TabItem>
 		<TabItem Header="Лекарства">
 			<UserControl Content="{Binding _MedicinesUserControl}"/>

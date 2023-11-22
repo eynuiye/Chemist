@@ -7,17 +7,14 @@ using Client = prakt.Models.Client;
 namespace prakt.Controllers
 {
     [ApiController]
-    [Route("client")]
+    [Route("clients")]
     public class ClientController : ControllerBase
     {
         [HttpGet]
-        public ActionResult Get(int id)
+        public ActionResult Get()
         {
             ChemistryContext db = new ChemistryContext();
-            Client? client = db.Clients.FirstOrDefault(m => m.Id == id);
-            if (client == null)
-                return NotFound();
-            return Ok(client);
+            return Ok(db.Clients);
         }
         [HttpDelete]
         [Route("{id}")]

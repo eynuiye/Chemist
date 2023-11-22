@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:vm="using:prakttwo.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 x:DataType="vm:ClientUserControlViewModel"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="prakttwo.Views.ClientUserControl">
+	<DockPanel>
+		<StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+			<Button Command="{Binding Update}" Content="Обновить"/>
+			<Button Command="{Binding Add}" Content="Добавить"/>
+			<Button Command="{Binding Delete}" Content="Удалить"/>
+			<Button Command="{Binding Edit}" Content="Изменить текущий"/>
+		</StackPanel>
+		<StackPanel DockPanel.Dock="Bottom">
+			<TextBlock Text="{Binding Message}"/>
+		</StackPanel>
+		<DataGrid ItemsSource="{Binding Clients}" AutoGenerateColumns="True" SelectedItem="{Binding SelectedClient}">
+
+		</DataGrid>
+	</DockPanel>
+</UserControl>
