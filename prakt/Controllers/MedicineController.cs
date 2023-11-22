@@ -5,17 +5,14 @@ using prakt.Models;
 namespace prakt.Controllers
 {
     [ApiController]
-    [Route("medicine")]
+    [Route("medicines")]
     public class MedicineController : ControllerBase
     {
         [HttpGet]
-        public ActionResult Get(int id)
+        public ActionResult Get()
         {
             ChemistryContext db = new ChemistryContext();
-            Medicine? medicine = db.Medicines.FirstOrDefault(c => c.Id == id);
-            if (medicine == null)
-                return NotFound();
-            return Ok(medicine);
+            return Ok(db.Medicines);
         }
         [HttpDelete]
         [Route("{id}")]
